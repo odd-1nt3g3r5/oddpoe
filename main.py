@@ -1,7 +1,9 @@
+# Paste the battle chat log you want parsed into a file called
+# "BattleChat" in the same directory as main.py before running.
 import pyperclip
 GreedyCounts = {}
 Greedies = ['performs','executes','swings','delivers']
-with open('Scratch') as f:
+with open('BattleChat') as f:
     for line in f:
         Tokens = line.split()
         # If the chat line is a greedy, check to see if the pirate is already in the 
